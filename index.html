@@ -3,110 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strategia Egzaminacyjna: Matematyka 4 LO</title>
+    <title>Poradnik: Prezentacja a Podstawa Programowa (Matematyka 4 LO)</title>
     <style>
         :root {
             --primary: #2563eb;
             --secondary: #1e40af;
-            --accent: #dbeafe;
-            --text: #1f2937;
-            --bg: #f3f4f6;
+            --accent: #eff6ff;
+            --text: #374151;
+            --bg: #f9fafb;
             --card-bg: #ffffff;
-            --success: #10b981;
-            --warning: #f59e0b;
+            --info-border: #60a5fa;
         }
-        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background-color: var(--bg); margin: 0; padding: 0; }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-        header { text-align: center; padding: 40px 0; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; border-radius: 0 0 20px 20px; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { margin: 0; font-size: 2.2rem; }
-        .subtitle { font-size: 1.1rem; opacity: 0.9; margin-top: 10px; }
-        .card { background: var(--card-bg); border-radius: 12px; padding: 25px; margin-bottom: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 5px solid var(--primary); }
-        .card.warning { border-left-color: var(--warning); }
-        .card.success { border-left-color: var(--success); }
-        h2 { color: var(--secondary); margin-top: 0; }
-        h3 { color: var(--text); margin-bottom: 10px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        .tag { display: inline-block; background: var(--accent); color: var(--secondary); padding: 2px 8px; border-radius: 4px; font-size: 0.85em; font-weight: bold; margin-right: 5px; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 1.8rem; } }
-        .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #6b7280; }
-        .cta-box { background-color: #ecfdf5; border: 1px solid #a7f3d0; padding: 15px; border-radius: 8px; color: #065f46; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #6b7280;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--info-border);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .tag {
+            background-color: var(--accent);
+            color: var(--secondary);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; gap: 20px; }
+        }
+
+        .example-box {
+            background-color: var(--accent);
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #dbeafe;
+            margin-top: 15px;
+            font-style: italic;
+            color: var(--secondary);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.85em;
+            color: #9ca3af;
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Egzamin Ustny: Matematyka 4 LO</h1>
-            <div class="subtitle">Przewodnik: Jak efektywnie połączyć własny projekt z wymaganiami podstawy programowej</div>
-        </div>
-    </header>
-
     <div class="container">
+        <header>
+            <h1>Egzamin Ustny: Matematyka 4 LO</h1>
+            <div class="subtitle">Dobre praktyki: Jak połączyć autorski projekt z wymaganiami egzaminacyjnymi</div>
+        </header>
 
-        <div class="card warning">
-            <h2>🎯 Wyzwanie: Projekt vs. Podstawa Programowa</h2>
-            <p><strong>Sytuacja:</strong> Prezentujesz ambitny temat (np. AI, ekonomia, fizyka), ale egzaminator jest zobligowany zweryfikować Twoją znajomość podstawy programowej dla klasy 4.</p>
-            <p><strong>Rekomendacja:</strong> Świadomie zarządzaj czasem egzaminu (ok. 15-20 min):</p>
+        <div class="card">
+            <h2>🎯 Cel: Spójność pasji i podstawy programowej</h2>
+            <p>Uczniowie często wybierają ambitne tematy (np. fizyka, ekonomia, AI), skupiając się na zagadnieniach akademickich. Egzamin ustny ma jednak na celu weryfikację opanowania <strong>podstawy programowej dla liceum</strong>.</p>
+            <p><strong>Rekomendacja dla zdających:</strong> Warto zadbać o czytelne proporcje w prezentacji:</p>
             <ul>
-                <li><strong>Model Zintegrowany:</strong> Omawiając projekt, wyraźnie wskazuj użyte narzędzia matematyczne (np. <em>"W tym miejscu wykorzystuję pochodną, która w ujęciu szkolnym definiowana jest jako..."</em>).</li>
-                <li><strong>Model 70/30:</strong> Poświęć 70% czasu na projekt, a ostatnie 30% na slajd "Powiązania z podstawą", gdzie wprost wymienisz zrealizowane zagadnienia.</li>
+                <li>Omawiając zaawansowany temat, zatrzymaj się przy zagadnieniach szkolnych (np. <em>"W tym modelu wykorzystuję pochodną funkcji, którą znamy z lekcji jako..."</em>).</li>
+                <li>Zakończ prezentację podsumowaniem, w którym wprost wymienisz wykorzystane działy matematyki (np. Analiza, Prawdopodobieństwo).</li>
             </ul>
         </div>
 
         <div class="card">
-            <h2>📚 Niezbędnik: Kluczowe zagadnienia do uwzględnienia</h2>
-            <p>Aby ocena była kompletna, warto odnieść się do poniższych obszarów (zgodnie z wymaganiami CKE dla klasy 4):</p>
+            <h2>📚 Przykładowe obszary weryfikacji (4 klasa)</h2>
+            <p>Niezależnie od tematu prezentacji, egzaminatorzy często sprawdzają rozumienie pojęć kluczowych dla tego etapu edukacji:</p>
             
             <div class="grid">
                 <div>
                     <h3>1. Analiza Matematyczna</h3>
                     <ul>
-                        <li><span class="tag">Pochodna</span> Interpretacja geometryczna i fizyczna.</li>
-                        <li><span class="tag">Monotoniczność</span> Wyznaczanie przedziałów monotoniczności.</li>
-                        <li><span class="tag">Ekstrema</span> Optymalizacja (zadania na minimum/maksimum).</li>
+                        <li><span class="tag">Pochodna</span> Interpretacja geometryczna (styczna).</li>
+                        <li><span class="tag">Badanie funkcji</span> Monotoniczność i ekstrema.</li>
+                        <li><span class="tag">Zastosowania</span> Zadania optymalizacyjne.</li>
                     </ul>
                 </div>
                 <div>
                     <h3>2. Rachunek Prawdopodobieństwa</h3>
                     <ul>
                         <li><span class="tag">Kombinatoryka</span> Reguła mnożenia, silnia.</li>
-                        <li><span class="tag">Prawdopodobieństwo</span> Klasyczne, warunkowe, całkowite.</li>
-                        <li><span class="tag">Bernoulli</span> Schemat prób sukces/porażka.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>3. Geometria Przestrzenna</h3>
-                    <ul>
-                        <li><span class="tag">Kąty</span> Kąt nachylenia prostej/płaszczyzny.</li>
-                        <li><span class="tag">Przekroje</span> Płaszczyzny tnące bryły.</li>
-                        <li><span class="tag">Objętość/Pole</span> Zastosowanie wzorów w praktyce.</li>
+                        <li><span class="tag">Prawdopodobieństwo</span> Klasyczne i warunkowe.</li>
+                        <li><span class="tag">Schemat Bernoulliego</span> Sukces i porażka.</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="card success">
-            <h2>💡 Struktura Prezentacji na ocenę celującą</h2>
+        <div class="card">
+            <h2>💡 Struktura skutecznej wypowiedzi</h2>
             
-            <h3>Wstęp (Kontekst)</h3>
-            <p>Przedstaw cel projektu i problem badawczy.</p>
+            <h3>Wstęp i Kontekst</h3>
+            <p>Przedstaw temat i cel swojego projektu badawczego.</p>
 
-            <h3>Rozwinięcie (Matematyka w praktyce)</h3>
-            <p>To najważniejszy moment. Zrób pauzę i wskaż powiązanie:</p>
-            <div class="cta-box">
-                <em>"Aby rozwiązać ten problem, zastosowałem/am pojęcie [X]. W podstawie programowej odpowiada to zagadnieniu [Y]."</em>
+            <h3>Część merytoryczna (Most do podstawy)</h3>
+            <p>To kluczowy moment. Wskaż powiązanie projektu z wiedzą szkolną:</p>
+            <div class="example-box">
+                "Aby zminimalizować błąd w sieci neuronowej, szukamy minimum funkcji. To analogia do szkolnego zadania na ekstrema funkcji, gdzie przyrównujemy pochodną do zera."
             </div>
 
-            <h3>Weryfikacja (Safety Net)</h3>
-            <p>Miej przygotowany slajd lub kartkę, na której możesz szybko wykonać prosty przykład obliczeniowy (np. policzenie pochodnej wielomianu). To potwierdza Twoją biegłość rachunkową i ułatwia pracę egzaminatorowi.</p>
+            <h3>Element weryfikacyjny</h3>
+            <p>Bądź gotowy/a na wykonanie prostego przykładu obliczeniowego na kartce lub tablicy (np. obliczenie pochodnej wielomianu). Potwierdza to biegłość rachunkową, która jest równie ważna jak rozumienie teorii.</p>
         </div>
 
         <div class="footer">
-            <p>Opracowanie społeczne: Rodzice i Uczniowie dla Społeczności</p>
+            <p>Materiał o charakterze społecznościowym/pomocniczym. Opracowany na bazie doświadczeń rodziców i uczniów.<br>
+            Nie stanowi oficjalnego komunikatu Szkoły w Chmurze ani wykładni wymagań CKE.</p>
         </div>
-
     </div>
+
 </body>
 </html>
